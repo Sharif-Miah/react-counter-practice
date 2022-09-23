@@ -16,7 +16,7 @@ const Users = () => {
             <h1>Hello Users</h1>
             <div className='container'>
                 {
-                    users.map(user => <User user={user} />)
+                    users.map(user => <User user={user} key={user.id} />)
                 }
             </div>
         </div>
